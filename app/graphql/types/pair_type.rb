@@ -3,10 +3,10 @@
      description 'A pair of coordinates'
 
      field :latitude, types.Float do
-       resolve ->(o, _, _) { o.first }
+       resolve ->(obj, _, _) { obj.first }
      end
 
      field :longitude, types.Float do
-       resolve ->(o, _, _) { o.last }
+       resolve ->(obj, _, _) { obj.last }
      end
    end
